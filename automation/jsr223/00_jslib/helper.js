@@ -26,7 +26,7 @@ var VOL_NORMAL = 40;
 
 var Notifications = "";
 
-function decodeKodiThumbnailURL(str)
+/* function decodeKodiThumbnailURL(str)
 {
     var r = str;
     r = decodeURIComponent(r);
@@ -34,7 +34,7 @@ function decodeKodiThumbnailURL(str)
     r = r.replace(".jpg/",".jpg");
     //r = r.replace("/original/","/w300/");
     return r;
-}
+} */
 
 function IsAlive(target,port,timeout)
 {
@@ -52,7 +52,7 @@ function IsAlive(target,port,timeout)
     return false;
 }
 
-function kodiCall(call)
+/* function kodiCall(call)
 {
     //logInfo("################ "+me+" Line: "+__LINE__+"  #################");	
     //print("Ping localhost: 	" + Ping.checkVitality(IP_kodi, 22, 500));
@@ -75,7 +75,7 @@ function sendNotification(title,msg)
     if (title != null ) title += ": ";
     else title = ""
     postUpdate(itemNotifications,itemNotifications.state + title + msg + "\n");
-}
+} */
 
 function sendMQTT(broker, topic, message, quiet)
 {
@@ -178,8 +178,8 @@ function formatISOStringtoJodaDateTimeZone(isostring)
 	//https://wiki.shibboleth.net/confluence/display/IDP30/ScriptedAttributeDefinition
 	var logger 					= Java.type("org.slf4j.LoggerFactory").getLogger("org.eclipse.smarthome.automation.module.script.rulesupport.internal.shared.SimpleRule");
 	
-	var RuleBuilder 			= Java.type("org.eclipse.smarthome.automation.core.util.RuleBuilder");
-	var RuleManager 			= Java.type("org.eclipse.smarthome.automation.RuleManager");
+	var RuleBuilder 			= Java.type("org.openhab.core.automation.util.RuleBuilder");
+	var RuleManager 			= Java.type("org.openhab.core.automation.RuleManager");
 
 	var uuid 					= Java.type("java.util.UUID");
 	var ScriptExecution 		= Java.type("org.eclipse.smarthome.model.script.actions.ScriptExecution");
