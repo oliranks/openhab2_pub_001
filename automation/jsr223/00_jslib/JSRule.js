@@ -1,6 +1,6 @@
 /**
  * Copyright (c) 2018 by Helmut Lehmeyer.
- * 
+ * aba
  * @author Helmut Lehmeyer 
  */
 
@@ -28,13 +28,13 @@ load(OPENHAB_CONF+'/automation/jsr223/00_jslib/triggersAndConditions.js');
 //var th = new Thread(new MyRun());
 
 
-//if(RuleBuilder == undefined)var RuleBuilder = Java.type("org.eclipse.smarthome.automation.core.util.RuleBuilder");
+//if(RuleBuilder == undefined)var RuleBuilder = Java.type("org.openhab.core.automation.util.RuleBuilder");
 
 /*
 
-if(RuleBuilder == undefined)var RuleBuilder = Java.type("org.eclipse.smarthome.automation.core.util.RuleBuilder");
+if(RuleBuilder == undefined)var RuleBuilder = Java.type("org.openhab.core.automation.util.RuleBuilder");
 
-In future better do it by org.eclipse.smarthome.automation.core.util.RuleBuilder like in 
+In future better do it by org.openhab.core.automation.util.RuleBuilder like in 
 org.eclipse.smarthome.automation.core.dto.RuleDTOMapper Don't know
 return RuleBuilder.create(ruleDto.uid)
 				.withActions(ActionDTOMapper.mapDto(ruleDto.actions))
@@ -74,7 +74,7 @@ return RuleBuilder.create(ruleDto.uid)
   })(this);
 //  UNTESTED UNTESTED UNTESTED 
 */
-
+//
 
 //Simplifies spelling for rules.
 (function (context) {
