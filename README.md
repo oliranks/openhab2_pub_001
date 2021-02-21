@@ -1,3 +1,9 @@
+Update:
+Trying to get it working on openhab-v2.5.12
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+OLD:
 ## openhab2_pub_001
 
 ## based on OpenHAB2 2.4.0+ using JSR223 Javascript for rules. You need a current openhab2-2.4.0.* snapshot to run, due to changes in the JSR223 Scripting engine. 
